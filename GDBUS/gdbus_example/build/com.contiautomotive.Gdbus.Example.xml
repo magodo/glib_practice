@@ -1,0 +1,17 @@
+<node>
+  <interface name="com.contiautomotive.Gdbus.Example">
+
+    <property name="MyProperty" type="s" access="read"/>
+
+    <signal name="MySignal">
+      <arg name="Value" type="s"/>
+    </signal>
+
+    <method name="MyMethod">
+      <arg name="InArg"  direction="in"  type="s"/>
+      <arg name="OutArg" direction="out" type="s"/>
+    </method>
+    
+  </interface>
+</node>
+

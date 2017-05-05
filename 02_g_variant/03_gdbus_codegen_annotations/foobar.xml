@@ -1,0 +1,17 @@
+<node>
+
+<interface name="Busname.ItfName">
+    <method name="FooMethod">
+    <!-- By default the type will be converted to C type: const char* -->
+
+        <!--arg name="byteArray" direction="in" type="ay"/-->
+
+    <!-- If use annotation instead, it will keep as GVariant -->
+        <arg name="byteArray" direction="in" type="ay">
+            <annotation name="org.gtk.GDBus.C.ForceGVariant" value="ON"/>
+        </arg>
+
+    </method>
+</interface>
+
+</node>
